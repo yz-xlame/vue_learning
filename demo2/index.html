@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/vue.js"></script>
+  <script src="js/jquery.min.js"></script>
+</head>
+<body>
+
+<div id="app1">
+  <h2>游戏列表</h2>
+  <div v-if="seen">2017热们</div>
+  <ol>
+    <li v-for="(game,index) in games">{{index+1}}.{{game.title}} / {{game.price}}金币</li>
+  </ol>
+</div>
+
+  <script src="js/index.js"></script>
+</body>
+</html>

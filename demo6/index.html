@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/vue.js"></script>
+  <script src="js/jquery.min.js"></script>
+</head>
+<body>
+
+<div id="app1">
+  <input type="text" v-model.lazy.trim="message">
+  <p>{{message}}</p>
+  <p>{{message | toupper}}</p>
+  <hr>
+  <p>进度条正在努力增长({{num | to}})</p>
+</div>
+
+  <script src="js/index.js"></script>
+</body>
+</html>

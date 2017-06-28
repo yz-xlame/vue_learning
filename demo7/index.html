@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/vue.js"></script>
+  <script src="js/jquery.min.js"></script>
+</head>
+<body>
+
+<div id="app1">
+  <p>这月的房租：</p><input type="text" V-model.number.lazy="num1">
+  <p>这月的管理费：</p><input type="text" V-model.number.lazy="num2">
+  <p>这月的水电：</p><input type="text" V-model.number.lazy="num3">
+  <p>这月的收入:</p><input type="text" V-model.number.lazy="num4">
+  <p>这月居住花费为:{{sum1}}，所占工资比重为 {{sum2}}%,剩余 {{sum3}}</p>
+</div>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
