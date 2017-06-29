@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/vue.js"></script>
+  <script src="js/jquery.min.js"></script>
+</head>
+<body>
+
+<div id="app1">
+  <div :class="{ac:isac}"></div>
+  <input type="button" value="变色" @click="isac=!isac">
+  <div :class="Round"></div>
+  <input type="button" value="变形" @click="Round.circle=!Round.circle,Round.shallow=!Round.shallow">
+  <div :class="[arr1,arr2]"></div>
+  <hr>
+  <div :style="{width:w+'px',height:h+'px'}"></div>
+  <div :style="object"></div>
+</div>
+
+  <script src="js/index.js"></script>
+</body>
+</html>

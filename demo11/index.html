@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/vue.js"></script>
+  <script src="js/jquery.min.js"></script>
+</head>
+<body>
+
+<div id="app1">
+  <p v-if="result==0">还没到发工资的时候呢！</p>
+  <p v-else-if="result<4000">这月发了{{result}},继续努力，升职加薪吧！</p>
+  <p v-else-if="result<6000">这月发了{{result}},还不错啊，能够吃辣条喝可乐玩游戏了！</p>
+  <p v-else>这月发了{{result}},天高任鸟飞，想买就买！</p>
+  <input type="button" @click="btn()" value="发工资啦！">
+</div>
+
+  <script src="js/index.js"></script>
+</body>
+</html>

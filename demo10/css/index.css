@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding:0;
+}
+
+div{
+  width: 200px;
+  height: 200px;
+  border: 1px solid #000;
+  background-color: #00f;
+}
+
+.ac{
+  background-color: #f00;
+}
+.shallow{
+  background-color: #999;
+}
+.circle{
+  border-radius: 50%;
+}
+.deep{
+  background-color: #233;
+}
+.small{
+  width: 100px;
+  height: 100px;
+}

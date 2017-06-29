@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/vue.js"></script>
+  <script src="js/jquery.min.js"></script>
+</head>
+<body>
+
+<div id="app1">
+  <ul>
+    <input type="text" placeholder="name" v-model.trim="name">
+    <input type="text" placeholder="time" v-model.number="money">
+    <input type="text" placeholder="hours" v-model.number="time">
+    <button @click="add()">添加</button>
+    <game-item v-for="(game,index) in games" :game='game' :index='index' :key="game.id" @remove="games.splice(index,1)"></game-item>
+  </ul>
+</div>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
