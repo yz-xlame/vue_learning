@@ -7,6 +7,20 @@ Vue.component('bume',{
   + '</div>'
 });
 
+Vue.component('dota',{
+  props:['lane'],
+  template:'<div>'
+  + '分路：{{lane}}，'
+  + '<slot name="hero">'
+  + '您的英雄：'
+  + '</slot>'
+  + '<slot>'
+  + '请选择英雄'
+  + '</slot>'
+  + '，做好准备，打死他们！'
+  + '</div>'
+})
+
 var app=new Vue({
   el: '#app1',
   data: {
