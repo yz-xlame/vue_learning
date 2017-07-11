@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/vue.js"></script>
+  <script src="js/jquery.min.js"></script>
+</head>
+<body>
+
+<div id="app1">
+  <h1>latest Vue.js Commits</h1>
+  <radio-group v-for="item in radios" :value="item.value" :id="item.id" :key="item.id" v-on:inc="incT"></radio-group>
+  <p>{{active}}</p>
+  <ul>
+    <li-group v-for="record in commits" :record="record" :key="record.id"></li-group>
+  </ul>
+</div>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
