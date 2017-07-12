@@ -18,8 +18,9 @@
     </thead>
     <tbody>
       <tr v-for="item in filteredData">
-        <td>{{item.name}}</td>
-        <td>{{item.power}}</td>
+        <td v-for="key in columns">
+          {{item[key]}}
+        </td>
       </tr>
     </tbody>
   </table>
