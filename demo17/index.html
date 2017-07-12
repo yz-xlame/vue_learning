@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/vue.js"></script>
+  <script src="js/jquery.min.js"></script>
+</head>
+<body>
+<!-- 定义组件 -->
+<script type="text/x-template" id="grid-template">
+  <table>
+    <thead>
+      <tr>
+        <th v-for="key in columns">{{key}}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr v-for="item in filteredData">
+        <td>{{item.name}}</td>
+        <td>{{item.power}}</td>
+      </tr>
+    </tbody>
+  </table>
+<!--   <p v-else>No matches found.</p> -->
+</script>
+
+<!-- 使用 -->
+<div id="app1">
+  <form id="search">
+    Search <input type="text" name="query" v-model.trim="search" placeholder="add~">
+  </form>
+  <grid 
+        :data="gridData"
+        :columns="gridColumns"
+        :filter-Key="search"
+  ></grid>
+</div>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
